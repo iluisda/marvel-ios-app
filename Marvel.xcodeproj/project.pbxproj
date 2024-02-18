@@ -21,6 +21,8 @@
 		1A24A0D62B826650005424C5 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		1A24A0D82B826652005424C5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1A24A0DB2B826652005424C5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		1A24A0E22B826668005424C5 /* Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
+		1A24A0E92B826C0F005424C5 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +39,7 @@
 		1A24A0C62B826650005424C5 = {
 			isa = PBXGroup;
 			children = (
+				1A24A0E92B826C0F005424C5 /* README.md */,
 				1A24A0D12B826650005424C5 /* marvel */,
 				1A24A0D02B826650005424C5 /* Products */,
 			);
@@ -53,8 +56,14 @@
 		1A24A0D12B826650005424C5 /* marvel */ = {
 			isa = PBXGroup;
 			children = (
+				1A24A0EE2B826CC5005424C5 /* Resources */,
+				1A24A0ED2B826CBD005424C5 /* Views */,
+				1A24A0EC2B826CB0005424C5 /* Networking */,
+				1A24A0EB2B826CA3005424C5 /* Models */,
+				1A24A0EA2B826C96005424C5 /* Controllers */,
 				1A24A0D22B826650005424C5 /* marvelApp.swift */,
 				1A24A0D42B826650005424C5 /* ContentView.swift */,
+				1A24A0E22B826668005424C5 /* Config.xcconfig */,
 				1A24A0D62B826650005424C5 /* Item.swift */,
 				1A24A0D82B826652005424C5 /* Assets.xcassets */,
 				1A24A0DA2B826652005424C5 /* Preview Content */,
@@ -68,6 +77,41 @@
 				1A24A0DB2B826652005424C5 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		1A24A0EA2B826C96005424C5 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		1A24A0EB2B826CA3005424C5 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		1A24A0EC2B826CB0005424C5 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		1A24A0ED2B826CBD005424C5 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		1A24A0EE2B826CC5005424C5 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -105,7 +149,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 1A24A0CA2B826650005424C5 /* Build configuration list for PBXProject "marvel" */;
+			buildConfigurationList = 1A24A0CA2B826650005424C5 /* Build configuration list for PBXProject "Marvel" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -279,6 +323,8 @@
 				DEVELOPMENT_TEAM = 6YZUPKL63P;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Marvel;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.developer-tools";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -308,6 +354,8 @@
 				DEVELOPMENT_TEAM = 6YZUPKL63P;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Marvel;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.developer-tools";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -329,7 +377,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		1A24A0CA2B826650005424C5 /* Build configuration list for PBXProject "marvel" */ = {
+		1A24A0CA2B826650005424C5 /* Build configuration list for PBXProject "Marvel" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1A24A0DD2B826652005424C5 /* Debug */,
