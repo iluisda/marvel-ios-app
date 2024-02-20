@@ -14,6 +14,12 @@
 		1A24A0DC2B826652005424C5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A24A0DB2B826652005424C5 /* Preview Assets.xcassets */; };
 		1A66131B2B84053E007F79EE /* SplashScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A66131A2B84053E007F79EE /* SplashScreenView.swift */; };
 		1A66131E2B8408D6007F79EE /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A66131D2B8408D6007F79EE /* MainView.swift */; };
+		1A6613232B8415F6007F79EE /* MarvelAPIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A6613222B8415F6007F79EE /* MarvelAPIService.swift */; };
+		1A6613252B8418F3007F79EE /* MarvelDataFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A6613242B8418F3007F79EE /* MarvelDataFetcher.swift */; };
+		1A6613272B84191F007F79EE /* MarvelResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A6613262B84191F007F79EE /* MarvelResponse.swift */; };
+		1A6613292B841954007F79EE /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A6613282B841954007F79EE /* Character.swift */; };
+		1A66132B2B8419AE007F79EE /* CharactersViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A66132A2B8419AE007F79EE /* CharactersViewModel.swift */; };
+		1A66132D2B841A33007F79EE /* CharactersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A66132C2B841A33007F79EE /* CharactersView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +34,12 @@
 		1A66131A2B84053E007F79EE /* SplashScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenView.swift; sourceTree = "<group>"; };
 		1A66131C2B8406B6007F79EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		1A66131D2B8408D6007F79EE /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		1A6613222B8415F6007F79EE /* MarvelAPIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarvelAPIService.swift; sourceTree = "<group>"; };
+		1A6613242B8418F3007F79EE /* MarvelDataFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarvelDataFetcher.swift; sourceTree = "<group>"; };
+		1A6613262B84191F007F79EE /* MarvelResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarvelResponse.swift; sourceTree = "<group>"; };
+		1A6613282B841954007F79EE /* Character.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
+		1A66132A2B8419AE007F79EE /* CharactersViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersViewModel.swift; sourceTree = "<group>"; };
+		1A66132C2B841A33007F79EE /* CharactersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,11 +73,14 @@
 		1A24A0D12B826650005424C5 /* marvel */ = {
 			isa = PBXGroup;
 			children = (
-				1A66131C2B8406B6007F79EE /* Info.plist */,
+				1A6613202B840B4C007F79EE /* Models */,
 				1A6613192B840476007F79EE /* Views */,
+				1A6613212B840B5E007F79EE /* ViewModels */,
+				1A66131F2B840A95007F79EE /* Services */,
 				1A24A0EE2B826CC5005424C5 /* Resources */,
 				1A24A0D22B826650005424C5 /* marvelApp.swift */,
 				1A24A0D62B826650005424C5 /* Item.swift */,
+				1A66131C2B8406B6007F79EE /* Info.plist */,
 				1A24A0D82B826652005424C5 /* Assets.xcassets */,
 				1A24A0DA2B826652005424C5 /* Preview Content */,
 			);
@@ -94,8 +109,35 @@
 				1A24A0D42B826650005424C5 /* ContentView.swift */,
 				1A66131A2B84053E007F79EE /* SplashScreenView.swift */,
 				1A66131D2B8408D6007F79EE /* MainView.swift */,
+				1A66132C2B841A33007F79EE /* CharactersView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		1A66131F2B840A95007F79EE /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				1A6613222B8415F6007F79EE /* MarvelAPIService.swift */,
+				1A6613242B8418F3007F79EE /* MarvelDataFetcher.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		1A6613202B840B4C007F79EE /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				1A6613262B84191F007F79EE /* MarvelResponse.swift */,
+				1A6613282B841954007F79EE /* Character.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		1A6613212B840B5E007F79EE /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				1A66132A2B8419AE007F79EE /* CharactersViewModel.swift */,
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -168,9 +210,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1A6613292B841954007F79EE /* Character.swift in Sources */,
 				1A24A0D52B826650005424C5 /* ContentView.swift in Sources */,
+				1A6613232B8415F6007F79EE /* MarvelAPIService.swift in Sources */,
 				1A24A0D72B826650005424C5 /* Item.swift in Sources */,
+				1A66132B2B8419AE007F79EE /* CharactersViewModel.swift in Sources */,
 				1A24A0D32B826650005424C5 /* marvelApp.swift in Sources */,
+				1A66132D2B841A33007F79EE /* CharactersView.swift in Sources */,
+				1A6613252B8418F3007F79EE /* MarvelDataFetcher.swift in Sources */,
+				1A6613272B84191F007F79EE /* MarvelResponse.swift in Sources */,
 				1A66131E2B8408D6007F79EE /* MainView.swift in Sources */,
 				1A66131B2B84053E007F79EE /* SplashScreenView.swift in Sources */,
 			);
@@ -181,6 +229,7 @@
 /* Begin XCBuildConfiguration section */
 		1A24A0DD2B826652005424C5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1A6613182B840459007F79EE /* Config.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
@@ -244,6 +293,7 @@
 		};
 		1A24A0DE2B826652005424C5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1A6613182B840459007F79EE /* Config.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;

@@ -14,10 +14,10 @@ struct SplashScreenView: View {
                 .background(Color.accentColor)
             Color.accentColor
                 .ignoresSafeArea()
-            Image("MarvelSplash")
-                .resizable()
-                .scaledToFit()
-                .frame(width: 300, height: 300)
+//            Image("MarvelSplash")
+//                .resizable()
+//                .scaledToFit()
+//                .frame(width: 300, height: 300)
         }
         .background(Color.accentColor)
     }
