@@ -17,7 +17,9 @@ struct ContentView: View {
         self.marvelDataFetcher = MarvelDataFetcher(marvelAPIService: marvelAPIService)
     }
     var body: some View {
-        CharactersView(viewModel: CharactersViewModel(marvelDataFetcher: marvelDataFetcher))
+        VStack(spacing: 0) { 
+            CharactersView(viewModel: CharactersViewModel(marvelDataFetcher: marvelDataFetcher))
+        }
         //        NavigationSplitView {
         //            List {
         //                ForEach(items) { item in

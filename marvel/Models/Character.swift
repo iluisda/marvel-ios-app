@@ -14,7 +14,7 @@ struct Character: Identifiable, Codable {
     let modified: String
     let resourceURI: String
     let urls: [Url]
-    let thumbnail: Image
+    let thumbnail: _Image
     let comics: ResourceList
     let stories: ResourceList
     let events: ResourceList
@@ -26,7 +26,7 @@ struct Url: Codable {
     let url: String
 }
 
-struct Image: Codable {
+struct _Image: Codable {
     let path: String
     let `extension`: String
 }

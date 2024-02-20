@@ -14,11 +14,6 @@
 		<string>AccentColor</string>
 		<key>UIImageName</key>
 		<string>180</string>
-		<key>UINavigationBar</key>
-		<dict>
-			<key>UIImageName</key>
-			<string></string>
-		</dict>
 	</dict>
 </dict>
 </plist>

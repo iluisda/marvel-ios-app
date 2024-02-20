@@ -9,10 +9,20 @@ import SwiftUI
 
 struct CharactersView: View {
     @ObservedObject var viewModel: CharactersViewModel
-    
+    @State private var searchText = ""
     var body: some View {
-        List(viewModel.characters) { character in
-            Text(character.name)
+        VStack(spacing: 0) {
+            if viewModel.isLoading {
+                ProgressView("Loading...")
+                    .progressViewStyle(CircularProgressViewStyle())
+                
+            } else {
+                HeaderView(searchText: $searchText)
+                List(viewModel.characters) { character in
+                    Text(character.name)
+                        .padding(0)
+                }
+            }
         }
         .onAppear {
             viewModel.fetchCharacters()
